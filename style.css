@@ -1,0 +1,90 @@
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    height: 720px;
+    width: 1200px;
+    overflow: hidden;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    text-align: center;
+}
+
+.slide img{
+    height: 720px;
+    width: 1200px;
+}
+
+.slides{
+    display: flex;
+    width: 700%;
+    height: 100%;
+}
+
+.slide{
+    width: 15%;
+    transition: 0.6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -15.35%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -30.36%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -45.36%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -60.36%;
+}
+
+#slide6:checked ~ .s1 {
+    margin-left: -75.36%;
+}
+
+#slide7:checked ~ .s1 {
+    margin-left: -90.36%;
+}
+
+.nav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
+input{
+    display: none;
+}
+
+.bar:hover{
+    background-color: white;
+
+}
